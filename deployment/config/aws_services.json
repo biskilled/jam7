@@ -1,0 +1,78 @@
+{
+  "services": {
+    "vpc": {
+      "vpc_id": "vpc-08636faeba77fbccf",
+      "public_subnet_1": "subnet-0087654b4ed429dd1",
+      "public_subnet_2": "subnet-05fd376361283f115",
+      "private_subnet_1": "subnet-0e29b020c21f9724c",
+      "private_subnet_2": "subnet-02facefe3ff476369",
+      "security_group_id": "sg-07874c9dcb78ec826",
+      "status": "DEPLOYED",
+      "deployed_at": "2025-08-15 12:55:42"
+    },
+    "efs": {
+      "file_system_id": "fs-0b7aeebc9145a9f0e",
+      "mount_targets": [
+        "fsmt-03466553db9dac84b",
+        "fsmt-0a1378314b9792f73"
+      ],
+      "status": "DEPLOYED",
+      "deployed_at": "2025-08-15 13:09:22"
+    },
+    "redis": {
+      "cluster_id": "chromadb-production-redis-cluster",
+      "endpoint": null,
+      "port": null,
+      "subnet_group_name": "chromadb-production-redis-subnet-group",
+      "parameter_group_name": "chromadb-production-redis-params",
+      "status": "DEPLOYED",
+      "deployed_at": "2025-08-16 19:37:56"
+    },
+    "ecs": {
+      "cluster_name": "chromadb-production-cluster",
+      "cluster_arn": "arn:aws:ecs:us-east-1:745127414678:cluster/chromadb-production-cluster",
+      "service_name": "chromadb-production-service",
+      "task_family": "chromadb-production-task",
+      "status": "DEPLOYED",
+      "deployed_at": "2025-08-15 13:25:34",
+      "service_arn": "arn:aws:ecs:us-east-1:745127414678:service/chromadb-production-cluster/chromadb-production-service"
+    },
+    "task_definition": {
+      "task_definition_arn": "arn:aws:ecs:us-east-1:745127414678:task-definition/chromadb-production-task:1",
+      "status": "DEPLOYED",
+      "deployed_at": "2025-08-15 13:25:36"
+    },
+    "load_balancer": {
+      "name": "chromadb-production-alb",
+      "arn": "arn:aws:elasticloadbalancing:us-east-1:745127414678:loadbalancer/app/chromadb-production-alb/b0178bdcf177d077",
+      "dns": "chromadb-production-alb-604519122.us-east-1.elb.amazonaws.com",
+      "status": "DEPLOYED",
+      "deployed_at": "2025-08-15 13:25:38"
+    },
+    "target_group": {
+      "name": "chromadb-production-tg",
+      "arn": "arn:aws:elasticloadbalancing:us-east-1:745127414678:targetgroup/chromadb-production-tg/8c611ee36ad8d482",
+      "status": "DEPLOYED",
+      "deployed_at": "2025-08-15 13:25:38"
+    },
+    "ecs_service": {
+      "service_arn": "arn:aws:ecs:us-east-1:745127414678:service/chromadb-production-cluster/chromadb-production-service",
+      "status": "DEPLOYED",
+      "deployed_at": "2025-08-15 13:25:39"
+    },
+    "auto_scaling": {
+      "status": "DEPLOYED",
+      "deployed_at": "2025-08-15 14:01:13"
+    },
+    "monitoring": {
+      "dashboard_name": "chromadb-production-dashboard",
+      "log_group_name": "/ecs/chromadb-production-task",
+      "status": "DEPLOYED",
+      "deployed_at": "2025-08-15 13:25:43"
+    }
+  },
+  "project_name": "chromadb-production",
+  "region": "us-east-1",
+  "last_updated": "2025-08-16 19:37:56",
+  "deployment_timestamp": "2025-08-15 12:47:08"
+}
